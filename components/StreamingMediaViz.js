@@ -133,7 +133,7 @@ export default function StreamingMediaViz() {
   const sizeHeight = Math.min(innerWidth, innerHeight) / 2;
 
   return (
-    <svg width={WIDTH} height={HEIGHT}>
+    <svg viewbox={`0 0 ${WIDTH} ${HEIGHT}`}>
       <Tree root={hierarchy(data)} size={[sizeWidth, sizeHeight]}>
         {(tree) => (
           <Group top={origin.y} left={origin.x}>

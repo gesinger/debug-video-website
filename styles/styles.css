@@ -38,10 +38,10 @@ body {
     @apply text-purple-400
   }
   .landing-section {
-    @apply w-[580px] lg:w-[740px] xl:w-[1060px] 2xl:w-[1380px] mt-16 flex flex-col space-y-4
+    @apply w-[360px] sm:w-[580px] lg:w-[740px] xl:w-[1060px] 2xl:w-[1380px] mt-16 flex flex-col space-y-4
   }
   .landing-image-container {
-    @apply mt-8 relative w-[480px] lg:w-[640px] xl:w-[960px] 2xl:w-[1280px] h-[270px] lg:h-[360px] xl:h-[540px] 2xl:h-[720px]
+    @apply mt-8 relative w-[256px] sm:w-[480px] lg:w-[640px] xl:w-[960px] 2xl:w-[1280px] h-[144px] sm:h-[270px] lg:h-[360px] xl:h-[540px] 2xl:h-[720px]
   }
   .carousel {
     @apply mt-16
@@ -55,22 +55,34 @@ body {
   .missing-features-list li .parenthetical {
     @apply ml-2 text-xs italic
   }
-  .header-text-container {
-    @apply mt-4
-  }
-  .header-viz-container {
-    @apply mt-12
-  }
   .download-button {
     @apply w-auto leading-10 px-6 font-semibold text-lg rounded-full bg-violet-600 text-white
+  }
+  .header {
+    @apply m-8
+  }
+  .header-text-container {
+    @apply mt-4 max-w-[560px]
+  }
+  .header-viz-container {
+    @apply mt-12 w-[300px] h-[240px]
+  }
+}
+
+@media (min-width: 500px) {
+  .header-viz-container {
+    @apply w-[500px] h-[400px]
   }
 }
 
 @media (min-width: 1155px) {
+  .header {
+    @apply flex flex-row space-x-16 m-0
+  }
   .header-text-container {
-    margin-top: 112px;
+    @apply w-[560px] mt-[112px]
   }
   .header-viz-container {
-    margin-top: 32px;
+    @apply mt-[32px]
   }
 }

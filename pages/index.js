@@ -9,11 +9,11 @@ export default function Home() {
     <div>
       <NavBar />
       <div className="flex justify-center">
-        <div className="flex flex-wrap justify-center space-x-16">
+        <div className="header">
           <div>
             <div className="header-text-container">
-              <h2 className="max-w-xl">Spend less time debugging <span className="highlight-color">video</span></h2>
-              <div className="mt-12 max-w-xl">
+              <h2>Spend less time debugging <span className="highlight-color">video</span></h2>
+              <div className="mt-12">
                 <p><span className="font-bold">Debugging HLS and DASH streams is time consuming.</span> It involves refreshing manifests, downloading segments, concatenating those segments with init segments, and countless runs of ffprobe.</p>
                 <p className="mt-6"><span className="font-bold">debug.video</span> does the tedious work for you. So you can get back to making the world of streaming media better.</p>
               </div>
@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center">
         <a
-          className="download-button mt-12"
+          className="download-button mt-8 sm:mt-16"
           href="https://github.com/gesinger/debug-video#downloading-and-installing"
         >
           Skip the rest and download!
@@ -205,7 +205,7 @@ export default function Home() {
         <a name="archives" />
         <div className="landing-section mt-12">
           <h2>Archives</h2>
-          <div className="ml-12 mr-12 flex space-x-16">
+          <div className="mx-12 flex flex-col sm:flex-row sm:space-x-16">
             <div className="basis-1/2 p-4">
               <h3 className="highlight-color">HAR</h3>
               <div className="mt-8">
@@ -228,7 +228,7 @@ export default function Home() {
         <a name="missing-features" />
         <div className="landing-section mt-12">
           <h2 className="mb-8">Missing Features</h2>
-          <div className="ml-12">
+          <div className="mx-12">
             <p>
               There's plenty more debug.video can do, and it's open source. Contributions are appreciated!
             </p>
