@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Image from 'next/image';
 import ChevronLeft from './ChevronLeft';
 import ChevronRight from './ChevronRight';
 import { useSpring, animated, useTransition } from '@react-spring/web'
@@ -43,7 +42,7 @@ const Item = ({ item }) => {
         <div className="mt-2">{item.subHeader}</div>
       </div>
       <div className="landing-image-container">
-        <Image layout="fill" src={item.image.src} alt={item.image.alt} />
+        <img src={item.image.src} alt={item.image.alt} />
       </div>
     </div>
   );

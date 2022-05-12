@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import NavBar from '../components/NavBar';
 import StreamingMediaViz from '../components/StreamingMediaViz';
 import LandingSection from '../components/LandingSection';
@@ -266,7 +265,7 @@ export default function Home() {
         <a name="testimonials" />
         <div className="landing-section mt-12">
           <div className="flex justify-center">
-             <Image
+             <img
               className="rounded-full"
               src="/images/glitched-big-buck-bunny.png"
               alt="image of glitched big buck bunny"
