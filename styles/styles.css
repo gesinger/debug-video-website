@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@font-face {
+  font-family: 'Inconsolata';
+  src: local('Inconsolata'),
+       url('/fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+}
 
 body {
-  font-family: 'Inconsolata';
+  font-family: Inconsolata, 'SF Mono', SFMono-Regular, ui-monospace, monospace;
 }
 
 @layer components {
