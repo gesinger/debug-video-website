@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+body {
+  font-family: 'Inconsolata';
+}
+
+@layer components {
+  body {
+    @apply bg-primary-800 text-primary-50
+  }
+  h1 {
+    @apply text-5xl font-bold
+  }
+  h2 {
+    @apply text-4xl font-bold
+  }
+  h3 {
+    @apply text-3xl font-bold
+  }
+  h4 {
+    @apply text-2xl font-bold
+  }
+  a {
+    @apply text-violet-600
+  }
+  .box {
+    @apply m-2 p-2 border border-gray-600
+  }
+  .highlight-color {
+    @apply text-purple-400
+  }
+  .landing-section {
+    @apply w-[580px] lg:w-[740px] xl:w-[1060px] 2xl:w-[1380px] mt-16 flex flex-col space-y-4
+  }
+  .landing-image-container {
+    @apply mt-8 relative w-[480px] lg:w-[640px] xl:w-[960px] 2xl:w-[1280px] h-[270px] lg:h-[360px] xl:h-[540px] 2xl:h-[720px]
+  }
+  .carousel {
+    @apply mt-16
+  }
+  .landing-divisor {
+    @apply mt-16 h-0.5 w-5/6 bg-gradient-to-r from-transparent via-purple-400 border-none rounded
+  }
+  .missing-features-list li {
+    @apply mt-2 list-disc text-lg
+  }
+  .missing-features-list li .parenthetical {
+    @apply ml-2 text-xs italic
+  }
+  .header-text-container {
+    @apply mt-4
+  }
+  .header-viz-container {
+    @apply mt-12
+  }
+  .download-button {
+    @apply w-auto leading-10 px-6 font-semibold text-lg rounded-full bg-violet-600 text-white
+  }
+}
+
+@media (min-width: 1155px) {
+  .header-text-container {
+    margin-top: 112px;
+  }
+  .header-viz-container {
+    margin-top: 32px;
+  }
+}
