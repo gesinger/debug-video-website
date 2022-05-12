@@ -6,10 +6,10 @@ export default function NavBar() {
   return (
     <div className="mt-3 mb-3">
       <nav className="flex mx-8 mt-6 text-xl">
-        <div className="w-8 h-8 mt-2 sm:mt-0 sm:w-14 sm:h-14">
+        <div className="w-8 h-8 mt-2.5 sm:mt-0 sm:w-14 sm:h-14">
           <Logo />
         </div>
-        <h4 className="mt-2.5 ml-3">debug.video</h4>
+        <h4 className="mt-2.5 ml-1 sm:ml-3">debug.video</h4>
         <NavItem
           className="ml-auto"
           href="http://github.com/gesinger/debug-video"
