@@ -272,11 +272,11 @@ export default function Home() {
               width={150}
               height={150}
             />
-              <div className="ml-8">
-                <p className="font-bold text-5xl">
+              <div className="ml-8 mt-8 sm:mt-4">
+                <p className="font-bold text-2xl sm:text-5xl">
                   "It's great."
                 </p>
-                <p className="mt-4 text-right"> - Glitched Big Buck Bunny</p>
+                <p className="mt-2 sm:mt-4 text-right text-xs sm:text-base"> - Glitched Big Buck Bunny</p>
               </div>
           </div>
         </div>
